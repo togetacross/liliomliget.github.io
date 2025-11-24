@@ -50,7 +50,7 @@
   <link rel="stylesheet" href="css/cookie-consent.css" />
   <script src="js/main.js" defer></script>
   <script src="js/cookie-consent.js" defer></script>
-  
+
 </head>
 
 <body>
@@ -198,38 +198,44 @@
 
       <div class="cookie-category-list">
         <div class="cookie-category">
-          <h3>Szükséges sütik</h3>
+          <div class="cookie-category-holder">
+            <h3>Szükséges sütik</h3>
+            <label class="cookie-switch disabled">
+              <span>Mindig engedélyezve</span>
+            </label>
+          </div>
           <p>
             Ezek a sütik elengedhetetlenek a weboldal működéséhez,
             ezért nem kikapcsolhatók. Ilyen például a beállításaid mentése.
           </p>
-          <label class="cookie-switch disabled">
-            <span>Mindig engedélyezve</span>
-          </label>
         </div>
 
         <div class="cookie-category">
-          <h3>Statisztikai sütik</h3>
+          <div class="cookie-category-holder">
+            <h3>Statisztikai sütik</h3>
+            <label class="cookie-switch">
+              <input type="checkbox" id="consent-analytics">
+              <span>Engedélyezem</span>
+            </label>
+          </div>
           <p>
             Ezekkel mérjük, hogyan használják a látogatók az oldalt (pl.
             melyik oldal mennyire népszerű), hogy javíthassuk a szolgáltatásainkat.
           </p>
-          <label class="cookie-switch">
-            <input type="checkbox" id="consent-analytics">
-            <span>Engedélyezem</span>
-          </label>
         </div>
 
         <div class="cookie-category">
-          <h3>Marketing sütik</h3>
+          <div class="cookie-category-holder">
+            <h3>Marketing sütik</h3>
+            <label class="cookie-switch">
+              <input type="checkbox" id="consent-marketing">
+              <span>Engedélyezem</span>
+            </label>
+          </div>
           <p>
             Ezeket személyre szabott hirdetések és marketing tartalmak megjelenítésére
             használjuk.
           </p>
-          <label class="cookie-switch">
-            <input type="checkbox" id="consent-marketing">
-            <span>Engedélyezem</span>
-          </label>
         </div>
       </div>
 
